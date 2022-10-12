@@ -5,7 +5,7 @@ import BeastCard from './BeastCard'
 export default function BeastList() {
   return <React.Fragment>
     { Data.beasts.map( 
-      (beast, index) => <BeastCard key={index} beast={beast}/>
+      (props, index) => <BeastCard key={index} props={props}/>
     )}
   </React.Fragment>
 }

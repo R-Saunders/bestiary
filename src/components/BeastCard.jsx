@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function BeastCard({beast}) {
+export default function BeastCard({props}) {
   return(
     <React.Fragment>
-      <img src={beast.hero_image} alt={beast.name}></img>
-      <h3>{beast.name}</h3>
+      <img src={props.hero_image} alt={props.name}></img>
+      <h3>{props.name}</h3>
     </React.Fragment>
   )
 }
