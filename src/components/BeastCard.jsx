@@ -7,5 +7,4 @@ export default function BeastCard({beast}) {
       <h3>{beast.name}</h3>
     </React.Fragment>
   )
-  
 }
