@@ -1,10 +1,14 @@
 import React from "react";
+import Name from "./BeastName";
+import BeastImg from "./BeastImg";
 
-export default function BeastCard({ props }) {
+const BeastCard = () => {
 	return (
 		<div>
-			<img src={props.hero_image} alt={props.name}></img>
-			<h3>{props.name}</h3>
+			<BeastImg />
+			<Name />
 		</div>
 	);
-}
+};
+
+export default BeastCard;
