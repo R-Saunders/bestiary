@@ -3,7 +3,7 @@ import Data from "../data/beasts.json";
 import Name from "./BeastName";
 import React from "react";
 
-export default function Blurb() {
+const Blurb = () => {
 	return (
 		<section>
 			{Data.beasts.map((props, index) => (
@@ -14,4 +14,6 @@ export default function Blurb() {
 			))}
 		</section>
 	);
-}
+};
+
+export default Blurb;
