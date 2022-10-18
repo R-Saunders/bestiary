@@ -7,7 +7,8 @@
       "description": "A beast description",
       "characteristics": ["Char1","Char2","Char3"],
       "hero_image": "https://via.placeholder.com/400",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue mi sapien, egestas faucibus velit facilisis sed. Integer porta lectus in placerat malesuada. Vestibulum id vulputate tortor, quis viverra sapien. Sed pulvinar eu sem ut semper. Mauris at ipsum suscipit, pulvinar turpis vel, tincidunt nunc. Donec viverra in mi ac commodo. Duis libero diam, rutrum dignissim arcu quis, aliquet pellentesque purus."
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue mi sapien, egestas faucibus velit facilisis sed. Integer porta lectus in placerat malesuada. Vestibulum id vulputate tortor, quis viverra sapien. Sed pulvinar eu sem ut semper. Mauris at ipsum suscipit, pulvinar turpis vel, tincidunt nunc. Donec viverra in mi ac commodo. Duis libero diam, rutrum dignissim arcu quis, aliquet pellentesque purus.",
+      "index": "Beast 1"      
     },
     {
       "name": "Beast B",
@@ -16,7 +17,8 @@
       "description": "Another beast description",
       "characteristics": ["Char2","Char4","Char1"],
       "hero_image": "https://via.placeholder.com/400",
-      "body": "Morbi finibus finibus leo quis venenatis. Maecenas sed consequat massa. Donec viverra fermentum dui at cursus. Cras dictum porta dolor vitae malesuada. Mauris ullamcorper arcu non sodales ornare. Sed dignissim, enim eget malesuada fringilla, justo nunc blandit diam, ac dictum diam tortor eget dolor. Phasellus tincidunt sollicitudin augue, finibus accumsan justo facilisis at. In tincidunt, ipsum non posuere viverra, ante nulla tempor augue, vel pharetra lorem ante faucibus lacus. Vestibulum elementum felis est, id feugiat mi imperdiet sit amet."
+      "body": "Morbi finibus finibus leo quis venenatis. Maecenas sed consequat massa. Donec viverra fermentum dui at cursus. Cras dictum porta dolor vitae malesuada. Mauris ullamcorper arcu non sodales ornare. Sed dignissim, enim eget malesuada fringilla, justo nunc blandit diam, ac dictum diam tortor eget dolor. Phasellus tincidunt sollicitudin augue, finibus accumsan justo facilisis at. In tincidunt, ipsum non posuere viverra, ante nulla tempor augue, vel pharetra lorem ante faucibus lacus. Vestibulum elementum felis est, id feugiat mi imperdiet sit amet.",
+      "index": "Beast 2"     
     },
     {
       "name": "Beast C",
@@ -25,7 +27,8 @@
       "description": "Yet another beast description",
       "characteristics": ["Char5", "Char3","Char6"],      
       "hero_image": "https://via.placeholder.com/400",
-      "body": "Sed feugiat ut purus eu varius. Integer ac mauris iaculis, suscipit neque et, gravida sapien. Suspendisse est libero, imperdiet vel sollicitudin at, lobortis quis ante. Vivamus eu odio sollicitudin, pellentesque quam nec, molestie ex. Pellentesque sagittis mattis tellus nec blandit. Aliquam malesuada aliquam massa, a sagittis sem. Nullam nec elit diam. Fusce tempor sed lacus tempor pharetra. Nullam id pellentesque sapien. Nullam gravida eu ipsum hendrerit efficitur. Vestibulum sit amet porta libero. Vestibulum viverra sem quis libero feugiat mattis. Morbi id tellus congue, accumsan odio ut, semper tellus."
+      "body": "Sed feugiat ut purus eu varius. Integer ac mauris iaculis, suscipit neque et, gravida sapien. Suspendisse est libero, imperdiet vel sollicitudin at, lobortis quis ante. Vivamus eu odio sollicitudin, pellentesque quam nec, molestie ex. Pellentesque sagittis mattis tellus nec blandit. Aliquam malesuada aliquam massa, a sagittis sem. Nullam nec elit diam. Fusce tempor sed lacus tempor pharetra. Nullam id pellentesque sapien. Nullam gravida eu ipsum hendrerit efficitur. Vestibulum sit amet porta libero. Vestibulum viverra sem quis libero feugiat mattis. Morbi id tellus congue, accumsan odio ut, semper tellus.",
+      "index": "Beast 3"
     }
   ]
 }

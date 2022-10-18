@@ -2,11 +2,11 @@ import React from "react";
 import Name from "./BeastName";
 import BeastImg from "./BeastImg";
 
-const BeastCard = () => {
+const BeastCard = ({ props }) => {
 	return (
 		<div>
-			<BeastImg />
-			<Name />
+			<BeastImg props={props} />
+			<Name props={props} />
 		</div>
 	);
 };

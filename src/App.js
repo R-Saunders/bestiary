@@ -12,8 +12,8 @@ const App = () => {
 	return (
 		<div>
 			<Header />
-			<Blurb />
 			<BeastList />
+			<Blurb />
 			<Contribute />
 			<Footer />
 		</div>
