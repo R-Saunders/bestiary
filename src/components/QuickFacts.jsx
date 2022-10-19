@@ -2,7 +2,7 @@ import Data from "../data/beasts.json";
 
 const QuickFacts = () => {
 	return (
-		<ol>
+		<ul>
 			{Data.beasts.map((props, index) => (
 				<ul key={index}>
 					<li>
@@ -28,7 +28,7 @@ const QuickFacts = () => {
 					</ol>
 				</ul>
 			))}
-		</ol>
+		</ul>
 	);
 };
 
