@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Blurb from "./components/Blurb";
 import Contribute from "./components/Contribute";
 import HeroImg from "./components/HeroImg";
+import QuickFacts from "./components/QuickFacts";
 
 
 // @TODO: Create a <Layout></Layout> Component
@@ -18,6 +19,7 @@ const App = () => {
 			<Blurb />
 			<Contribute />
 			<Footer />
+			<QuickFacts />
 		</div>
 	);
 };
