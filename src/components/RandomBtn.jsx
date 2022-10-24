@@ -1,5 +1,5 @@
 const RandomBtn = () => {
-	return <button>Random Article</button>;
+	return <button className="random_button">Random Article</button>;
 };
 
 export default RandomBtn;

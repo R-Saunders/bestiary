@@ -14,11 +14,13 @@ const App = () => {
 	return (
 		<div>
 			<Header />
+			<main>
 			<HeroImg/>
 			<BeastList />
-			<Blurb />
 			<Contribute />
+			</main>
 			<Footer />
+			<Blurb />
 			<QuickFacts />
 			<BeastBody/>
 		</div>

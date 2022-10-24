@@ -4,7 +4,7 @@ import BeastCard from "./BeastCard";
 
 export default function BeastList() {
 	return (
-		<section>
+		<section className="beast_list">
 			{Data.beasts.map((props, index) => (
 				<BeastCard key={index} props={props} />
 			))}

@@ -1,5 +1,5 @@
 const ContributeBtn = () => {
-	return <button>Contribute</button>;
+	return <button className="contribute_btn">Contribute</button>;
 };
 
 export default ContributeBtn;

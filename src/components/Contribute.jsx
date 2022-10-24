@@ -3,7 +3,7 @@ import ContributeBtn from "./ContributeBtn";
 
 const Contribute = () => {
 	return (
-		<section>
+		<section className="contribute">
 			<h2>How to Contribute</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue mi
