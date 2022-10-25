@@ -15,7 +15,7 @@ const App = () => {
 		<div>
 			<Header />
 			<main>
-			<HeroImg/>
+			{/* <HeroImg/> */}
 			<BeastList />
 			<Contribute />
 			</main>
