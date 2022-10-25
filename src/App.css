@@ -18,7 +18,8 @@ header {
 	justify-content: center;
 	background-color: #8c322a;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffd700' fill-opacity='0.27' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-	border-bottom: dotted 1px #ffd700;
+	border: 0.5em #74624c ridge;
+	border-bottom-style: groove;
 }
 
 .header_inner {
@@ -37,7 +38,7 @@ header {
 .header_left h2 {
 	font-size: 3em;
 	color: #d9d8d0;
-  text-shadow: #0D0D0D 1px 1px 5px;
+  text-shadow: #0D0D0D 1px 1px 2px;
 
 }
 
@@ -45,12 +46,14 @@ header {
 	display: flex;
 	align-items: center;
 	gap: 1em;
+	filter: drop-shadow(1px 1px 2px black);
 }
 
 .logo {
 	max-width: 90px;
 	display: flex;
 	align-items: center;
+	filter: drop-shadow(1px 1px 2px black);
 }
 
 .random_button {
@@ -59,7 +62,6 @@ header {
   background: linear-gradient(90deg, rgba(173,133,93,1) 1%, rgba(220,194,155,1) 10%, rgba(220,194,155,1) 90%, rgba(173,133,93,1) 100%);
 	border-radius: 1em;
   cursor: pointer;
-  box-shadow: #0D0D0D 1px 1px 5px;
 }
 
 .random_button:hover {
@@ -94,14 +96,23 @@ main {
 
 .beast_list {
 	display: flex;
+	flex-direction: column;
 	max-width: 1200px;
 	width: 100%;
-	flex-flow: row wrap;
-	justify-content: space-around;
+	margin: 2em 0;
+	gap: 1em;
 	align-items: center;
+	text-shadow: 1px 1px 2px rgb(128, 128, 128);
 }
 
-.card {
+.beast_list_inner {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+}
+
+.beast_card {
 	background-image: url(./imgs/CardBackground.svg);
 	width: 400px;
 	height: 400px;
@@ -113,9 +124,10 @@ main {
 	align-items: center;
 	justify-content: center;
 	padding-bottom: 2em;
+	filter: drop-shadow(2px 4px 6px black);
 }
 
-.card img {
+.beast_card img {
 	max-width: 200px;
 	max-height: 200px;
 	clip-path: polygon(
@@ -210,16 +222,18 @@ main {
 	width: 100%;
 }
 
-.contribute h2 {
-  font-size: 3em;
+.section_header {
+  font-size: 2em;
   color: #b8b8b8;
   text-shadow: 2px 2px 4px black;
 	background-image: url(./imgs/wood-plank.svg);
 	background-size: 100% 100%;
 	background-color: #5d401b;
-	padding: 0.25em 1em;
+	padding: 0.2em 1em;
 	border-radius: 0.25em;
 	background-blend-mode: overlay;
+	width: 327px;
+	box-shadow: 5px 5px 10px black;
 }
 
 .contribute p {
@@ -305,4 +319,18 @@ i {
 
 .footer_bottom i:hover {
   color:#374f57
+}
+
+.carousel_img {
+	height: calc(100vh - 130px);
+	width: 100%;
+	object-fit: contain;
+	
+}
+
+.carousel {
+	width: 100%;
+	background-image: url(./imgs/old-paper.jpg);
+	background-size: cover;
+	border: 0.5em #74624c ridge;
 }
