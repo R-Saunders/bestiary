@@ -62,10 +62,12 @@ header {
   background: linear-gradient(90deg, rgba(173,133,93,1) 1%, rgba(220,194,155,1) 10%, rgba(220,194,155,1) 90%, rgba(173,133,93,1) 100%);
 	border-radius: 1em;
   cursor: pointer;
+	transition: all 0.5s ease-out;
 }
 
 .random_button:hover {
   background: linear-gradient(90deg, rgb(150, 115, 79) 1%, rgb(166, 146, 117) 10%, rgb(166, 146, 117) 90%, rgb(150, 115, 79) 100%);
+	transition-duration: 1s;
 }
 
 .search_box {
@@ -125,6 +127,8 @@ main {
 	justify-content: center;
 	padding-bottom: 2em;
 	filter: drop-shadow(2px 4px 6px black);
+	margin: 1em 0;
+	transition: all 0.5s ease-out;
 }
 
 .beast_card img {
@@ -191,6 +195,16 @@ main {
 		0% 12%,
 		0% 1%
 	);
+	height: 200px;
+	object-fit: cover;
+	width: 200px;
+	
+}
+
+.beast_card:hover {
+	scale: 1.1;
+	transition-property: scale;
+	transition-duration: 1s;
 }
 
 .beast_name {
@@ -204,14 +218,16 @@ main {
 	font-size: 1.25em;
 	background: rgba(0, 0, 0, 0);
 	cursor: pointer;
+	transition: all 0.5s ease-out;
 }
 
 .see_more:hover {
 	background: rgba(0, 0, 0, 0.2);
+	transition-duration: 1s;
 }
 
 .contribute {
-
+	margin: 1em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -247,10 +263,12 @@ main {
   border-radius: 1em;
   cursor: pointer;
   box-shadow: #0d0d0d 1px 1px 5px;
+	transition: all 0.5s ease-out;
 }
 
 .contribute_btn:hover {
   background: linear-gradient(90deg, rgb(150, 115, 79) 1%, rgb(166, 146, 117) 10%, rgb(166, 146, 117) 90%, rgb(150, 115, 79) 100%);
+	transition-duration: 1s;
 }
 
 footer {
@@ -286,10 +304,12 @@ footer {
   border-radius: 1em;
   cursor: pointer;
   box-shadow: #0d0d0d 1px 1px 5px;
+	transition: all 0.5s ease-out;
 }
 
 .support_btn:hover {
   background: linear-gradient(90deg, rgb(150, 115, 79) 1%, rgb(166, 146, 117) 10%, rgb(166, 146, 117) 90%, rgb(150, 115, 79) 100%);
+	transition-duration: 1s;
 }
 
 .social_icons {
@@ -301,11 +321,13 @@ footer {
 }
 
 .social_icons i:hover {
-  color:#1a2d34
+  color:#1a2d34;
+	transition-duration: 1s;
 }
 
 i {
 	cursor: pointer;
+	transition: all 0.5s ease-out;
 }
 
 .footer_bottom {
@@ -318,7 +340,8 @@ i {
 }
 
 .footer_bottom i:hover {
-  color:#374f57
+  color:#374f57;
+	transition-duration: 1s;
 }
 
 .carousel_img {
@@ -333,4 +356,9 @@ i {
 	background-image: url(./imgs/old-paper.jpg);
 	background-size: cover;
 	border: 0.5em #74624c ridge;
+}
+
+.contribute_btn_container {
+	display: flex;
+	gap: 2em;
 }
