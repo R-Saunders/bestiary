@@ -1,5 +1,5 @@
 const Name = ({ props }) => {
-	return <p>{props.name}</p>;
+	return <h3 className="beast_name">{props.name}</h3>;
 };
 
 export default Name;

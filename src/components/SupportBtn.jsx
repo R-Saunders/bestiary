@@ -1,5 +1,5 @@
 const SupportBtn = () => {
-	return <button>Support Us</button>;
+	return <button className="support_btn">Support Us</button>;
 };
 
 export default SupportBtn;

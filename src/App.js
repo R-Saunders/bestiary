@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import BeastList from "./components/BeastList";
 import Header from "./components/Header";
@@ -14,11 +15,13 @@ const App = () => {
 	return (
 		<div>
 			<Header />
+			<main>
 			<HeroImg/>
 			<BeastList />
-			<Blurb />
 			<Contribute />
+			</main>
 			<Footer />
+			<Blurb />
 			<QuickFacts />
 			<BeastBody/>
 		</div>
