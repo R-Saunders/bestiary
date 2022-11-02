@@ -8,6 +8,7 @@ import Contribute from "./components/Contribute";
 import HeroImg from "./components/HeroImg";
 import QuickFacts from "./components/QuickFacts";
 import BeastBody from "./components/BeastBody";
+import entryForm from './components/EntryForm';
 
 // @TODO: Create a <Layout></Layout> Component
 
@@ -24,6 +25,7 @@ const App = () => {
 			<Blurb />
 			<QuickFacts />
 			<BeastBody/>
+			<entryForm/>
 		</div>
 	);
 };
