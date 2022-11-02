@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const entryForm = () => {
+const EntryForm = () => {
 	const formSubmitted = async (event) => {
 		event.preventDefault();
 		const _name = event.target.name.value;
@@ -97,4 +97,4 @@ const entryForm = () => {
 	);
 };
 
-export default entryForm;
+export default EntryForm;
