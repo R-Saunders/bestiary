@@ -1,12 +1,12 @@
 import React from "react";
-import Name from "./BeastName";
+import BeastName from "./BeastName";
 import BeastImg from "./BeastImg";
 
 const BeastCard = ({ props }) => {
 	return (
 		<div className="beast_card">
 			<BeastImg props={props} />
-			<Name props={props} />
+			<BeastName props={props} />
 			<button className="see_more">See More</button>
 		</div>
 	);

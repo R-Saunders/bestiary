@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import BeastList from "./components/BeastList";
 import Header from "./components/Header";
@@ -7,25 +7,26 @@ import Blurb from "./components/Blurb";
 import Contribute from "./components/Contribute";
 import HeroImg from "./components/HeroImg";
 import QuickFacts from "./components/QuickFacts";
-import BeastBody from "./components/BeastBody";
-import EntryForm from './components/EntryForm';
+import BeastContent from "./components/BeastContent";
+import EntryForm from "./components/EntryForm";
 
 // @TODO: Create a <Layout></Layout> Component
 
 const App = () => {
+
 	return (
 		<div>
 			<Header />
 			<main>
-			<HeroImg/>
-			<BeastList />
-			<Contribute />
+				<HeroImg />
+				<BeastList />
+				<Contribute />
 			</main>
 			<Footer />
 			<Blurb />
 			<QuickFacts />
-			<BeastBody/>
-			<EntryForm/>
+			<BeastContent />
+			<EntryForm />
 		</div>
 	);
 };

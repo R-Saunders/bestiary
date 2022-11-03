@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "../imgs/Bestiary.png";
 import RandomBtn from "./RandomBtn";
-import HeaderBackground from "../imgs/Header_Background.png"
 
 export default function Header() {
 	return (
