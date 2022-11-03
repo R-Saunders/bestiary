@@ -38,8 +38,7 @@ header {
 .header_left h2 {
 	font-size: 3em;
 	color: #d9d8d0;
-  text-shadow: #0D0D0D 1px 1px 2px;
-
+	text-shadow: #0d0d0d 1px 1px 2px;
 }
 
 .header_right {
@@ -59,14 +58,26 @@ header {
 .random_button {
 	padding: 0.5em 1em;
 	font-size: 1.25em;
-  background: linear-gradient(90deg, rgba(173,133,93,1) 1%, rgba(220,194,155,1) 10%, rgba(220,194,155,1) 90%, rgba(173,133,93,1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(173, 133, 93, 1) 1%,
+		rgba(220, 194, 155, 1) 10%,
+		rgba(220, 194, 155, 1) 90%,
+		rgba(173, 133, 93, 1) 100%
+	);
 	border-radius: 1em;
-  cursor: pointer;
+	cursor: pointer;
 	transition: all 0.5s ease-out;
 }
 
 .random_button:hover {
-  background: linear-gradient(90deg, rgb(150, 115, 79) 1%, rgb(166, 146, 117) 10%, rgb(166, 146, 117) 90%, rgb(150, 115, 79) 100%);
+	background: linear-gradient(
+		90deg,
+		rgb(150, 115, 79) 1%,
+		rgb(166, 146, 117) 10%,
+		rgb(166, 146, 117) 90%,
+		rgb(150, 115, 79) 100%
+	);
 	transition-duration: 1s;
 }
 
@@ -76,8 +87,8 @@ header {
 	background-repeat: no-repeat;
 	font-size: 1em;
 	border: none;
-  padding: 1.75em;
-  width: 150px;
+	padding: 1.75em;
+	width: 150px;
 	outline: none;
 	background-position: center;
 	background-color: rgba(0, 0, 0, 0);
@@ -111,7 +122,6 @@ main {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-
 }
 
 .beast_card {
@@ -198,7 +208,6 @@ main {
 	height: 200px;
 	object-fit: cover;
 	width: 200px;
-	
 }
 
 .beast_card:hover {
@@ -227,21 +236,24 @@ main {
 }
 
 .contribute {
-	margin: 1em 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  gap: 1em;
-  box-sizing: border-box;
-	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1em;
+	box-sizing: border-box;
+	padding: 1em;
+	background-color: #cac7a0;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%238c895d' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+	border: 0.5em #74624c ridge;
+	border-bottom-style: groove;
 	width: 100%;
 }
 
 .section_header {
-  font-size: 2em;
-  color: #b8b8b8;
-  text-shadow: 2px 2px 4px black;
+	font-size: 2em;
+	color: white;
+	text-shadow: 2px 2px 4px black;
 	background-image: url(./imgs/wood-plank.svg);
 	background-size: 100% 100%;
 	background-color: #5d401b;
@@ -253,75 +265,100 @@ main {
 }
 
 .contribute p {
-  font-size: 1.25em;
+	font-size: 1.25em;
+	max-width: 800px;
+	text-align: center;
 }
 
 .contribute_btn {
-  padding: 0.5em 1em;
-  font-size: 1.25em;
-  background: linear-gradient(90deg, rgba(173,133,93,1) 1%, rgba(220,194,155,1) 10%, rgba(220,194,155,1) 90%, rgba(173,133,93,1) 100%);
-  border-radius: 1em;
-  cursor: pointer;
-  box-shadow: #0d0d0d 1px 1px 5px;
+	padding: 0.5em 1em;
+	font-size: 1.25em;
+	background: linear-gradient(
+		90deg,
+		rgba(173, 133, 93, 1) 1%,
+		rgba(220, 194, 155, 1) 10%,
+		rgba(220, 194, 155, 1) 90%,
+		rgba(173, 133, 93, 1) 100%
+	);
+	border-radius: 1em;
+	cursor: pointer;
+	box-shadow: #0d0d0d 1px 1px 5px;
 	transition: all 0.5s ease-out;
 }
 
 .contribute_btn:hover {
-  background: linear-gradient(90deg, rgb(150, 115, 79) 1%, rgb(166, 146, 117) 10%, rgb(166, 146, 117) 90%, rgb(150, 115, 79) 100%);
+	background: linear-gradient(
+		90deg,
+		rgb(150, 115, 79) 1%,
+		rgb(166, 146, 117) 10%,
+		rgb(166, 146, 117) 90%,
+		rgb(150, 115, 79) 100%
+	);
 	transition-duration: 1s;
 }
 
 footer {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 	background-color: #819ba6;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2370868f' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-	margin-top: 1em;
+	background-image: url(data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%274%27 height=%274%27 viewBox=%270 0 4 4%27%3E%3Cpath fill=%27%2370868f%27 fill-opacity=%270.4%27 d=%27M1 3h1v1H1V3zm2-2h1v1H3V1z%27%3E%3C/path%3E%3C/svg%3E);
+	border: 0.5em #74624c ridge;
 }
 
 .footer_inner {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-  gap: 1em;
+	max-width: 1200px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em;
+	gap: 1em;
 }
 
 .footer_top {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .support_btn {
 	padding: 0.5em 1em;
-  font-size: 1.25em;
-  background: linear-gradient(90deg, rgba(173,133,93,1) 1%, rgba(220,194,155,1) 10%, rgba(220,194,155,1) 90%, rgba(173,133,93,1) 100%);
-  border-radius: 1em;
-  cursor: pointer;
-  box-shadow: #0d0d0d 1px 1px 5px;
+	font-size: 1.25em;
+	background: linear-gradient(
+		90deg,
+		rgba(173, 133, 93, 1) 1%,
+		rgba(220, 194, 155, 1) 10%,
+		rgba(220, 194, 155, 1) 90%,
+		rgba(173, 133, 93, 1) 100%
+	);
+	border-radius: 1em;
+	cursor: pointer;
+	box-shadow: #0d0d0d 1px 1px 5px;
 	transition: all 0.5s ease-out;
 }
 
 .support_btn:hover {
-  background: linear-gradient(90deg, rgb(150, 115, 79) 1%, rgb(166, 146, 117) 10%, rgb(166, 146, 117) 90%, rgb(150, 115, 79) 100%);
+	background: linear-gradient(
+		90deg,
+		rgb(150, 115, 79) 1%,
+		rgb(166, 146, 117) 10%,
+		rgb(166, 146, 117) 90%,
+		rgb(150, 115, 79) 100%
+	);
 	transition-duration: 1s;
 }
 
 .social_icons {
-  display: flex;
-  font-size: 2em;
-  color: #27424d;
-  gap:1em;
-  padding: 1em;
+	display: flex;
+	font-size: 2em;
+	color: #27424d;
+	gap: 1em;
+	padding: 1em;
 }
 
 .social_icons i:hover {
-  color:#1a2d34;
+	color: #1a2d34;
 	transition-duration: 1s;
 }
 
@@ -335,20 +372,19 @@ i {
 	justify-content: center;
 	width: 100%;
 	gap: 1em;
-  color: #416b7b;
+	color: #416b7b;
 	font-size: 1.25em;
 }
 
 .footer_bottom i:hover {
-  color:#374f57;
+	color: #374f57;
 	transition-duration: 1s;
 }
 
 .carousel_img {
-	height: calc(100vh - 130px);
+	height: calc(100vh - 156px);
 	width: 100%;
 	object-fit: contain;
-	
 }
 
 .carousel {
