@@ -1,11 +1,13 @@
-import HeroImg from "../components/HeroImg";
-import BeastList from "../components/BeastList";
+import Blurb from "../components/Blurb";
+import QuickFacts from "../components/QuickFacts";
+import BeastDesc from "../components/BeastDesc";
 
 const Entry = () => {
 	return (
 		<main>
-			<HeroImg />
-			<BeastList />
+			<Blurb />
+			<QuickFacts />
+			<BeastDesc />
 		</main>
 	);
 };

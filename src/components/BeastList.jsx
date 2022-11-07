@@ -15,7 +15,6 @@ export default function BeastList() {
 		}
 	};
 	Data();
-
 	return (
 		<section className="beast_list">
 			<h2 className="section_header">Featured Beasts</h2>
