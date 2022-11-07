@@ -229,13 +229,28 @@ main {
 	padding: 8px 16px;
 	border-radius: 0.5em;
 	font-size: 1.25em;
-	background: rgba(0, 0, 0, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(173, 133, 93, 1) 1%,
+		rgba(220, 194, 155, 1) 10%,
+		rgba(220, 194, 155, 1) 90%,
+		rgba(173, 133, 93, 1) 100%
+	);
 	cursor: pointer;
 	transition: all 0.5s ease-out;
+	box-shadow: #0d0d0d 1px 1px 5px;
+	color: black;
 }
 
 .see_more:hover {
-	background: rgba(0, 0, 0, 0.2);
+	background: linear-gradient(
+		90deg,
+		rgb(150, 115, 79) 1%,
+		rgb(166, 146, 117) 10%,
+		rgb(166, 146, 117) 90%,
+		rgb(150, 115, 79) 100%
+	);
+	color: black;
 	transition-duration: 1s;
 }
 
