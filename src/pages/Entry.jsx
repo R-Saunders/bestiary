@@ -1,4 +1,3 @@
-import Blurb from "../components/Blurb";
 import QuickFacts from "../components/QuickFacts";
 import BeastDesc from "../components/BeastDesc";
 import { useParams } from "react-router-dom";
