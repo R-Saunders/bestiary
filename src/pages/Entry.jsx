@@ -22,7 +22,7 @@ const Entry = () => {
 
 	return (
 		<main>
-			<Blurb props={singleAPI} />
+			{/* <Blurb props={singleAPI} /> */}
 			<QuickFacts props={singleAPI} />
 			<BeastDesc props={singleAPI} />
 		</main>

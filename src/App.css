@@ -267,6 +267,7 @@ main {
 	border: 0.5em #74624c ridge;
 	border-bottom-style: groove;
 	width: 100%;
+	margin-top: 1em;
 }
 
 .section_header {
@@ -416,4 +417,39 @@ i {
 .contribute_btn_container {
 	display: flex;
 	gap: 2em;
+}
+
+.beast_desc {
+	max-width: 1200px;
+	font-size: 1.25rem;
+	white-space: break-spaces;
+}
+
+.quick_facts {
+	max-width: 1200px;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 1.5em 0;
+}
+
+.quick_facts-name {
+	margin: 1em 0;
+}
+
+.quick_facts-img {
+	max-width: 300px;
+	outline: 0.5em #74624c ridge;
+}
+
+.quick_facts-location, .quick_facts-mythos, .quick_facts-chars {
+	display: flex;
+	gap: 1em;
+	align-items: flex-end;
+	margin: 1em 0;
+}
+
+.quick_facts-location h4, .quick_facts-location p, .quick_facts-mythos h4, .quick_facts-mythos p, .quick_facts-chars h4, .quick_facts-chars p {
+	margin: 0;
 }

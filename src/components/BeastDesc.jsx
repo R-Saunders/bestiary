@@ -1,3 +1,3 @@
 export default function Desc({ props }) {
-	return <p>{props.description}</p>;
+	return <section className="beast_desc">{props.description}</section>;
 }

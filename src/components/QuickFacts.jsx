@@ -2,18 +2,21 @@ import React from "react";
 
 const QuickFacts = ({ props }) => {
 	return (
-		<section>
+		<section className="quick_facts">
 			<div>
-				<h3>Name</h3>
-				<p>{props.name}</p>
-				<img src={props.image} alt={props.name}></img>
-				<h4>Location</h4>
+			<h2 className="quick_facts-name">{props.name}</h2>
+			<div className="quick_facts-location">
+				<h4>Location:</h4>
 				<p>{props.location}</p>
-				<h3>Mythos</h3>
-				<p>{props.mythology}</p>
-				<h4>Characteristics</h4>
-				<p>{props.characteristics}</p>
 			</div>
+			<div className="quick_facts-mythos">
+				<h4>Mythos:</h4>
+				<p>{props.mythology}</p>
+			</div>
+			<div className="quick_facts-chars" >
+			<h4>Characteristics:</h4>
+			<p>{props.characteristics}</p></div></div>
+			<div><img className="quick_facts-img" src={props.image} alt={props.name}></img></div>
 		</section>
 	);
 };
