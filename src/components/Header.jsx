@@ -2,6 +2,8 @@ import React from "react";
 import Logo from "../imgs/Bestiary.png";
 import RandomBtn from "./RandomBtn";
 import { Link } from "react-router-dom";
+import LoginButton from "./Login";
+import LogoutButton from "./Logout";
 
 export default function Header() {
 	return (
@@ -15,7 +17,9 @@ export default function Header() {
 						</div>
 					</Link>
 					<div className="header_right">
-						<RandomBtn />
+						<LoginButton />
+						<LogoutButton />
+						{/* <RandomBtn /> */}
 						<input className="search_box" type="text" placeholder="Search" />
 					</div>
 				</div>
