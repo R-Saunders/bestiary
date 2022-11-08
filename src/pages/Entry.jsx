@@ -21,8 +21,20 @@ const Entry = () => {
 
 	return (
 		<main>
-			<QuickFacts props={singleAPI} />
-			<BeastDesc props={singleAPI} />
+			<div className="entry_container">
+				<div
+					id="torn_edge_banner"
+					className="torn_container torn_left torn_right"
+				>
+					<div></div>
+					<div className="banner_text_container">
+						<span className="banner_text">
+							<QuickFacts props={singleAPI} />
+							<BeastDesc props={singleAPI} />
+						</span>
+					</div>
+				</div>
+			</div>
 		</main>
 	);
 };
