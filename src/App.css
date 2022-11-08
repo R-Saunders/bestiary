@@ -427,7 +427,8 @@ i {
 	max-width: 1200px;
 	font-size: 1.25rem;
 	white-space: break-spaces;
-	margin-top: 1em;
+	margin: 1rem 0;
+	padding: 0 2rem;
 }
 
 .quick_facts {
@@ -436,8 +437,16 @@ i {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	margin-bottom: 2em;
-	padding: 2em;
+	padding: 2rem;
+}
+
+.quick_facts p {
+	font-size: 1.25rem;
+}
+
+.quick_facts h4, .quick_facts h2 {
+	font-weight: 700;
+	letter-spacing: 1px;
 }
 
 .quick_facts-name {
@@ -445,16 +454,15 @@ i {
 }
 
 .quick_facts-img {
-	max-width: 300px;
+	width: 300px;
 	outline: 0.5em #74624c ridge;
 	margin-right: 1em;
 	margin-top: 1em;
+	height: 300px;
+	object-fit: cover;
 }
 
 .quick_facts-location, .quick_facts-mythos, .quick_facts-chars {
-	display: flex;
-	gap: 1em;
-	align-items: flex-end;
 	margin: 1em 0;
 }
 
@@ -477,12 +485,6 @@ i {
 
  License: GPL 3.0
  License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
-
- Structure:
- <div class="torn_container torn_left torn_right">
-	<div></div>
-	<div>Torn Edge Banner</div>
- </div>
 */
 
 body{

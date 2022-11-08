@@ -11,7 +11,7 @@ const Entry = () => {
 
 	useEffect(() => {
 		singleEntry();
-	});
+	}, []);
 
 	const singleEntry = async () => {
 		const _entry = await axios.get(`http://localhost:8989/read/${id}`);
