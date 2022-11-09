@@ -14,10 +14,10 @@ export default function Header() {
 							<h2>Bestiary</h2>
 						</div>
 					</Link>
-					<div className="header_right">
+					{/* <div className="header_right">
 						<RandomBtn />
 						<input className="search_box" type="text" placeholder="Search" />
-					</div>
+					</div> */}
 				</div>
 			</header>
 		</React.Fragment>
