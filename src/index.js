@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Entry from './pages/Entry';
+import Create from './pages/Create';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/entry/:id" element={<Entry />} />
+          <Route path="/create" element={<Create />} />
         </Route>
       </Routes>
     </BrowserRouter>

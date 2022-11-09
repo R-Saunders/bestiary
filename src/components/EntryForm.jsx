@@ -28,72 +28,91 @@ const EntryForm = () => {
 	};
 
 	return (
-		<React.Fragment>
-			<h2>Create a New Entry</h2>
-			<form onSubmit={formSubmitted}>
-				<label for="name">Name of Cryptid:</label>
-				<input
-					type="text"
-					name="name"
-					id="name"
-					placeholder="Name of Cryptid"
-					autoComplete="off"
-					required
-				/>
-				<label for="location">Location of the Cryptid:</label>
-				<input
-					type="text"
-					name="location"
-					id="location"
-					placeholder="Country"
-					autoComplete="off"
-					required
-				/>
-				<label for="mythology">
-					The mythology, legend or folklore that this Cryptid belongs to:
-				</label>
-				<input
-					type="text"
-					name="mythology"
-					id="mythology"
-					placeholder="Mythology"
-					autoComplete="off"
-					required
-				/>
-				<label for="characteristics">
-					List of characteristics for the Cryptid:
-				</label>
-				<input
-					type="text"
-					name="characteristics"
-					id="characteristics"
-					placeholder="Firebreathing, Aquatic, Tough Skin, Stonegaze etc."
-					autoComplete="off"
-					required
-				/>
-				<label for="image">An Image URL for the Cryptid:</label>
-				<input
-					type="text"
-					name="image"
-					id="image"
-					placeholder="Image URL"
-					autoComplete="off"
-					required
-				/>
-				<label for="content">A full description for the Cryptid:</label>
-				<textarea
-					type="textarea"
-					name="content"
-					id="content"
-					autoComplete="off"
-					required
+		<main>
+			<section className="entry_form_container">
+				<div
+					id="torn_edge_banner"
+					className="torn_container torn_left torn_right"
 				>
-					Enter content here such as descriptions, mythos, folklore, legends and
-					any other descriptive that do not fit in previous fields
-				</textarea>
-				<input type="submit" value="Submit" />
-			</form>
-		</React.Fragment>
+					<div></div>
+					<div className="banner_text_container">
+						<span className="banner_text">
+							<h2>Create a New Entry</h2>
+							<form onSubmit={formSubmitted} className="entry_form">
+								<label for="name">Name of Cryptid:</label>
+								<input
+									type="text"
+									name="name"
+									id="name"
+									placeholder="Name of Cryptid"
+									autoComplete="off"
+									required
+									className="form_input"
+								/>
+								<label for="location">Location of the Cryptid:</label>
+								<input
+									type="text"
+									name="location"
+									id="location"
+									placeholder="Country"
+									autoComplete="off"
+									required
+									className="form_input"
+									/>
+								<label for="mythology">
+									The mythology, legend or folklore that this Cryptid belongs
+									to:
+								</label>
+								<input
+									type="text"
+									name="mythology"
+									id="mythology"
+									placeholder="Mythology"
+									autoComplete="off"
+									required
+									className="form_input"
+									/>
+								<label for="characteristics">
+									List of characteristics for the Cryptid:
+								</label>
+								<input
+									type="text"
+									name="characteristics"
+									id="characteristics"
+									placeholder="Firebreathing, Aquatic, Tough Skin, Stonegaze etc."
+									autoComplete="off"
+									required
+									className="form_input"
+									/>
+								<label for="image">An Image URL for the Cryptid:</label>
+								<input
+									type="text"
+									name="image"
+									id="image"
+									placeholder="Image URL"
+									autoComplete="off"
+									required
+									className="form_input"
+									/>
+								<label for="content">A full description for the Cryptid:</label>
+								<textarea
+									type="textarea"
+									name="content"
+									id="content"
+									autoComplete="off"
+									placeholder="Enter content here such as descriptions, mythos, folklore,
+									legends and any other descriptive that does not fit in previous
+									fields"
+									required
+									className="form_input"
+									></textarea>
+								<input type="submit" value="Submit" className="submit_btn" />
+							</form>
+						</span>
+					</div>
+				</div>
+			</section>
+		</main>
 	);
 };
 
