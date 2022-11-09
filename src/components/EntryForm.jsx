@@ -7,6 +7,7 @@ const EntryForm = () => {
 		const _name = event.target.name.value;
 		const _location = event.target.location.value;
 		const _mythology = event.target.mythology.value;
+		const _description = event.target.description.value;
 		const _characteristics = event.target.characteristics.value;
 		const _image = event.target.image.value;
 		const _content = event.target.content.value;
@@ -15,6 +16,7 @@ const EntryForm = () => {
 			name: _name,
 			location: _location,
 			mythology: _mythology,
+			description: _description,
 			characteristics: _characteristics,
 			image: _image,
 			content: _content,
@@ -22,6 +24,8 @@ const EntryForm = () => {
 
 		try {
 			await axios.post("http://localhost:8989/create", obj);
+			document.getElementById("entry_form").reset();
+			alert("Thank you for submitting your entry");
 		} catch (error) {
 			console.log(error);
 		}
@@ -38,7 +42,7 @@ const EntryForm = () => {
 					<div className="banner_text_container">
 						<span className="banner_text">
 							<h2>Create a New Entry</h2>
-							<form onSubmit={formSubmitted} className="entry_form">
+							<form onSubmit={formSubmitted} className="entry_form" id="entry_form">
 								<label for="name">Name of Cryptid:</label>
 								<input
 									type="text"
@@ -58,7 +62,7 @@ const EntryForm = () => {
 									autoComplete="off"
 									required
 									className="form_input"
-									/>
+								/>
 								<label for="mythology">
 									The mythology, legend or folklore that this Cryptid belongs
 									to:
@@ -71,7 +75,21 @@ const EntryForm = () => {
 									autoComplete="off"
 									required
 									className="form_input"
-									/>
+								/>
+								<label for="description">
+									A brief description for the Cryptid:
+								</label>
+								<textarea
+									type="textarea"
+									name="description"
+									id="description"
+									autoComplete="off"
+									placeholder="Enter a brief description for the Cryptid."
+									required
+									className="form_input text_area"
+									rows="3"
+
+								></textarea>
 								<label for="characteristics">
 									List of characteristics for the Cryptid:
 								</label>
@@ -83,7 +101,7 @@ const EntryForm = () => {
 									autoComplete="off"
 									required
 									className="form_input"
-									/>
+								/>
 								<label for="image">An Image URL for the Cryptid:</label>
 								<input
 									type="text"
@@ -93,7 +111,7 @@ const EntryForm = () => {
 									autoComplete="off"
 									required
 									className="form_input"
-									/>
+								/>
 								<label for="content">A full description for the Cryptid:</label>
 								<textarea
 									type="textarea"
@@ -101,11 +119,12 @@ const EntryForm = () => {
 									id="content"
 									autoComplete="off"
 									placeholder="Enter content here such as descriptions, mythos, folklore,
-									legends and any other descriptive that does not fit in previous
+									legends and anything else that does not fit in previous
 									fields"
 									required
-									className="form_input"
-									></textarea>
+									className="form_input text_area"
+									rows="4"
+								></textarea>
 								<input type="submit" value="Submit" className="submit_btn" />
 							</form>
 						</span>

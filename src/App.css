@@ -47,6 +47,7 @@ header {
 	font-size: 3em;
 	color: #d9d8d0;
 	text-shadow: #0d0d0d 1px 1px 2px;
+	margin: 0;
 }
 
 .header_right {
@@ -373,6 +374,7 @@ footer {
 	cursor: pointer;
 	box-shadow: #0d0d0d 1px 1px 5px;
 	transition: all 0.5s ease-out;
+	color: black;
 }
 
 .support_btn:hover {
@@ -384,6 +386,7 @@ footer {
 		rgb(150, 115, 79) 100%
 	);
 	transition-duration: 1s;
+	color: black;
 }
 
 .social_icons {
@@ -613,13 +616,14 @@ body{
 	background: none;
 	border: none;
 	border-bottom: 1px solid grey;
-	padding: 0.25rem 0.5rem;
+	padding: 0.25rem 0;
 	outline: none;
 	width: 100%;
 }
 
 .form_input::placeholder {
 	color:#27424d;
+	font-size: 1.25rem;
 }
 
 .submit_btn {
@@ -671,4 +675,10 @@ body{
 
 .welcome_body {
 	font-size: 1.5rem;
+}
+
+.text_area::placeholder {
+	text-align: center;
+	line-height: 4rem;
+	font-size: 1.25rem;
 }
