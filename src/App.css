@@ -34,7 +34,7 @@ header {
 	display: flex;
 	max-width: 1200px;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 1em;
 }
 
@@ -274,8 +274,22 @@ main {
 	margin-top: 1em;
 }
 
+.contribute_header {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #8c322a;
+	text-shadow: 1px 1px 1px black;
+}
+
+.contribute_body {
+	font-size: 1.5rem;
+	text-align: center;
+	max-width: 800px;
+}
+
 .section_header {
-	font-size: 2em;
+	font-size: 3em;
 	color: white;
 	text-shadow: 2px 2px 4px black;
 	background-image: url(./imgs/wood-plank.svg);
@@ -284,13 +298,8 @@ main {
 	padding: 0.2em 1em;
 	border-radius: 0.25em;
 	background-blend-mode: overlay;
-	width: 327px;
+	width: 487px;
 	box-shadow: 5px 5px 10px black;
-}
-
-.contribute p {
-	font-size: 1.25em;
-	max-width: 800px;
 	text-align: center;
 }
 
@@ -642,4 +651,24 @@ body{
 
 .page_container {
 	padding: 0 1rem;
+}
+
+.welcome {
+	max-width: 1200px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 1rem;
+}
+
+.welcome_header {
+	font-size: 3em;
+	font-weight: 700;
+	color: #8c322a;
+	text-shadow: #0d0d0d 1px 1px 1px;
+}
+
+.welcome_body {
+	font-size: 1.5rem;
 }
