@@ -14,8 +14,12 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className="footer_bottom">
-					<i className="fa-brands fa-square-github"></i>
-					<i className="fa-brands fa-linkedin"></i>
+					<a href="https://github.com/R-Saunders">
+						<i className="fa-brands fa-square-github"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/rich-saunders/">
+						<i className="fa-brands fa-linkedin"></i>
+					</a>
 					<p>Made by R Saunders</p>
 				</div>
 			</div>
