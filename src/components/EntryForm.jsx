@@ -23,7 +23,10 @@ const EntryForm = () => {
 		};
 
 		try {
-			await axios.post("http://localhost:8989/create", obj);
+			await axios.post(
+				"https://bestiary-api.netlify.app/.netlify/functions/api/create",
+				obj
+			);
 			document.getElementById("entry_form").reset();
 			alert("Thank you for submitting your entry");
 		} catch (error) {
@@ -42,7 +45,11 @@ const EntryForm = () => {
 					<div className="banner_text_container">
 						<span className="banner_text">
 							<h2>Create a New Entry</h2>
-							<form onSubmit={formSubmitted} className="entry_form" id="entry_form">
+							<form
+								onSubmit={formSubmitted}
+								className="entry_form"
+								id="entry_form"
+							>
 								<label for="name">Name of Cryptid:</label>
 								<input
 									type="text"
@@ -88,7 +95,6 @@ const EntryForm = () => {
 									required
 									className="form_input text_area"
 									rows="3"
-
 								></textarea>
 								<label for="characteristics">
 									List of characteristics for the Cryptid:

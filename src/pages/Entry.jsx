@@ -14,7 +14,9 @@ const Entry = () => {
 	}, []);
 
 	const singleEntry = async () => {
-		const _entry = await axios.get(`http://localhost:8989/read/${id}`);
+		const _entry = await axios.get(
+			`https://bestiary-api.netlify.app/.netlify/functions/api/read/${id}`
+		);
 		console.log(_entry);
 		setSingleApi(_entry.data);
 	};

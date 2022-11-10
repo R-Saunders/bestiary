@@ -6,7 +6,8 @@ import BeastCard from "./BeastCard";
 const BeastList = () => {
 	const [API, setAPI] = useState([]);
 	const Data = async () => {
-		const apiURL = "http://localhost:8989/read";
+		const apiURL =
+			"https://bestiary-api.netlify.app/.netlify/functions/api/read";
 		try {
 			const reqData = await axios.get(apiURL);
 			setAPI(reqData.data);
@@ -25,6 +26,6 @@ const BeastList = () => {
 			</div>
 		</section>
 	);
-}
+};
 
 export default BeastList;
