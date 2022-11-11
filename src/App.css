@@ -297,11 +297,12 @@ main {
 	background-size: 100% 100%;
 	background-color: #5d401b;
 	padding: 0.2em 1em;
-	border-radius: 0.25em;
+	border-radius: 0.5em;
 	background-blend-mode: overlay;
-	width: 487px;
 	box-shadow: 5px 5px 10px black;
 	text-align: center;
+	background-size: cover;
+	margin: 0 1rem;
 }
 
 .contribute_btn {
