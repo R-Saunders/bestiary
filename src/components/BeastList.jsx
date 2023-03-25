@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import BeastCard from "./BeastCard";
 
@@ -20,7 +19,7 @@ const BeastList = () => {
 		<section className="beast_list">
 			<h2 className="section_header">Featured Beasts</h2>
 			<div className="beast_list_inner">
-				{API.map((props, index) => (
+				{API.slice(0, 6).map((props, index) => (
 					<BeastCard key={index} props={props} />
 				))}
 			</div>
